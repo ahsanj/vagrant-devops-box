@@ -1,13 +1,16 @@
 # devops vagrant box
 
-- Intsall vagrant
-- Install virtualbox
+You need to Install
+- vagrant
+- virtualbox
+Go to the clone directory and run the follwoing command
 - vagrant up
+To ssh to your box
 - vargrant ssh
 
 Includes
 * Terraform
 * AWS CLI
-* Ansibli
+* Ansible
 * Go
 * Packer
