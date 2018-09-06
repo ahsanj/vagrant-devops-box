@@ -1,7 +1,11 @@
 # devops vagrant box
 
 You need to Install
+
 - vagrant
+
+https://www.vagrantup.com/downloads.html
+
 - virtualbox
 
 Go to the clone directory and run the following command.
