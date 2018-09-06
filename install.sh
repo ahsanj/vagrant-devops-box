@@ -7,6 +7,7 @@ apt-get -y install docker.io ansible unzip golang-go vim
 usermod -G docker ubuntu
 
 pip install -U pip 
+# https://stackoverflow.com/questions/1763156/127-return-code-from
 if [[ $? == 127 ]]; then
     wget -q https://bootstrap.pypa.io/get-pip.py
     python get-pip.py
@@ -19,6 +20,7 @@ TERRAFORM_VERSION="0.11.8"
 PACKER_VERSION="1.2.5"
 
 terraform_version=$(terraform -v | head -1 | cut -d ' ' -f 2 | tail -c +2)
+# https://www.linuxnix.com/pipestatus-internal-variable/
 t_retval=${PIPESTATUS[0]}
 
 [[ $terraform_version != $TERRAFORM_VERSION ]] || [[ $t_retval != 0 ]] \
