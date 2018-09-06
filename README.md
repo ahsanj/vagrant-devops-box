@@ -4,11 +4,11 @@ You need to Install
 - vagrant
 - virtualbox
 
-Go to the clone directory and run the follwoing command
+Go to the clone directory and run the following command.
 
 - vagrant up
 
-To ssh to your box
+To ssh to your box.
 
 - vargrant ssh
 
